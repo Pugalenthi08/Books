@@ -1,0 +1,1795 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>BookRental</title>
+
+
+    <!-- slick link  -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+    integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+    integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<script type="module" crossorigin src="assets/index.6f279bdd.js"></script>
+<link rel="modulepreload" href="assets/vendor.4ea4e284.js">
+<link rel="stylesheet" href="assets/index.0f26cec9.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+
+    :root {
+        --primary-color: #ffffff;
+        --seconday-color: #E0E0E0;
+        --headerBg-color: #001F3F;
+        --buttoncolor: #ef6e11;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 p {
+        color: #0d0c22;
+        ;
+    }
+
+    /* h1,h2,h3,h4,h5,h6{
+        font-family: 'Playfair Display', serif;
+
+    } */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 p {
+        font-family: 'Bodoni Moda', serif;
+
+
+
+
+    }
+
+    /* .fa-facebook {
+        color: red;
+        font-size: 30px;
+    } */
+
+    i {
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        margin-right: 5px;
+    }
+
+    h1 {
+        font-size: 36px;
+        font-weight: 1000;
+    }
+
+    footer a {
+
+        color: white;
+        text-decoration: none;
+    }
+
+    .footer h5 {
+        color: rgb(122, 122, 122);
+    }
+
+
+    /* navebar start   */
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding: 0 20px 0 20px !important;
+        color: white;
+    }
+
+    .bg-body-tertiary {
+        background-color: var(--headerBg-color) !important;
+
+    }
+
+    .navbar-toggler {
+        /* background-color: white !important; */
+        border: var(--bs-border-width) solid rgba(255, 255, 255, 0.15);
+    }
+
+    /* navebar ends */
+
+
+
+
+    /* .container {
+            background-color: rgb(166, 231, 231);
+            height: 500px;
+
+        } */
+
+
+
+
+
+    /* new arival section  */
+    .newarrival1 {
+        padding-top: 90px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .newarival {
+
+
+        margin-top: 15px;
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .newarival1 {
+        width: 250px;
+        /* border: 3px solid rgb(56, 56, 65); */
+        background-color: #ffffff;
+        box-shadow: 0.5px 0.5px 10px rgb(91, 91, 91);
+        border-radius: 10px;
+        padding: 20px;
+
+    }
+
+    .newarival1 img {
+        border-radius: 10px;
+    }
+
+
+    /* adverdisemnt section */
+    .advbutton {
+        height: 40px;
+        background-color: var(--buttoncolor);
+        border-radius: 20px;
+        width: 300px;
+        /* border: 2px solid white; */
+        border: none;
+    }
+
+    .advbutton2 {
+        height: 40px;
+        background-color: var(--buttoncolor);
+        border-radius: 20px;
+        width: 130px;
+        /* border: 2px solid white; */
+        border: none;
+    }
+
+    .bookadv {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bookadv img {
+        max-height: 190px;
+    }
+
+
+    /* trending Books */
+    .trendingbooks {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .trendingbutton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .trend {
+        height: 20px;
+        background-color: #404243;
+
+    }
+
+    .trends {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+
+    /* chooseauthor */
+    .chooseauthor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /* aboutsection */
+    .abouticon {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .aboutimage img {
+        max-height: 300px;
+    }
+
+
+    /* RattingSection */
+    .Ratings {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    /* form File  */
+    .advbutton1 {
+        height: 40px;
+        background-color: var(--buttoncolor);
+        border-radius: 20px;
+        width: 100%;
+        /* border: 2px solid white; */
+        border: none;
+
+    }
+
+    .innerdiv input {
+        border: 2px;
+        background-color: #e7e4e4;
+
+    }
+
+
+
+    /* categories section style  */
+    .outer {
+        box-shadow: 1px 1px 1px 1px #c9c9c9, 0px 1px #c9c9c9;
+        height: 250Px;
+        width: 90%;
+        margin: auto;
+        padding: 10px;
+        /* padding: 20px; */
+        background-color: rgb(255, 255, 255);
+        /* display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap; */
+        position: relative;
+        bottom: -50px;
+        border-radius: 20px;
+        /* left: 10%; */
+    }
+
+    .firstsection {
+        background-image: url(./Image/blure2.png);
+        /* Add the blur effect */
+        border-radius: 0px 0px 20px 20px;
+
+    }
+
+    .firstsection1 img {
+        max-height: 400px;
+
+
+    }
+
+    .top {
+        height: fit-content;
+        padding: 20px;
+        position: relative;
+
+    }
+
+    .introImg {
+        animation-name: introAnime;
+        animation-duration: 2s;
+        transition: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    .searchBtn {
+        padding: 5px 10px;
+        background-color: #ef6e11;
+        border: none;
+        color: white;
+        border-radius: 10px;
+    }
+
+    /* .introImg:hover {
+            transform:scale(1.1) !important;
+            transition: 2s;
+        } */
+
+    @keyframes introAnime {
+        0% {
+            transform: translateY(0px);
+        }
+
+        100% {
+            transform: translateY(-10px);
+        }
+
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    a {}
+
+    .imageicon {
+
+        transition: 0.8s;
+
+    }
+
+    .imageicon:hover {
+        transform: scale(1.15) !important;
+        /* transition: 0.8s; */
+
+    }
+
+    .bookNameCont {
+        font-size: 14px;
+        font-weight: 700;
+        color: #535353;
+        ;
+    }
+
+    .newarival1 {
+        transition: 0.8s;
+    }
+
+    .newarival1:hover {
+        transform: scale(1.1) !important;
+        /* transition: 0.8s; */
+
+    }
+
+
+    /* .abouticon:hover {
+            transform:scale(1.1) !important;
+            transition: 2s;
+        } */
+    */
+    /* @keyframes imageicon {
+            0% {
+                transform: translateX(0px);
+            }
+
+            100% {
+                transform: translateX(-10px);
+            }
+
+        } */
+
+    .shape {
+        width: 90%;
+        padding-left: 30px;
+    }
+
+    .navbar .icon {
+        display: none;
+    }
+
+    .iconss img {
+        max-height: 60px;
+        /* margin: auto;  */
+
+    }
+
+    .Menuparent {
+        width: 25px;
+        height: fit-content;
+
+    }
+
+    .chil {
+        height: 3px;
+        background-color: white;
+        width: 2px;
+        border-radius: 10px;
+
+        animation-name: menuAnime;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    .chil2 {
+        animation-delay: 0.2s;
+
+    }
+
+    .chil3 {
+        animation-delay: 0.3s;
+
+    }
+
+    @keyframes menuAnime {
+        0% {
+            width: 2px;
+        }
+
+        100% {
+            width: 20px;
+        }
+
+    }
+
+    .newarival img {
+        max-height: 200px;
+    }
+
+    .iconTwo {
+        display: block;
+    }
+
+
+    .navsearch {
+        display: none;
+    }
+
+    .welcomeh span {
+        color: var(--buttoncolor);
+    }
+
+    .trendbook img {
+        max-height: 200px;
+    }
+
+    .bookContText {
+        width: 100%;
+    }
+
+    .bookBannerSec {
+        margin-top: 60px;
+        /* height: 280px; */
+        height: fit-content;
+        width: 100%;
+        background-image: url(./Image/BOOK.png);
+        background-size: cover;
+        padding: 10px 10px 30px 10px;
+
+
+    }
+
+    p {
+        margin-bottom: 0px;
+    }
+
+
+
+
+
+
+
+
+
+    .text h6 {
+        text-align: left;
+        line-height: 25px;
+    }
+
+    .formimg img {
+        max-height: 300px;
+    }
+
+    h6 {
+        line-height: 20px;
+    }
+
+    .class img {
+        max-height: 300px;
+
+    }
+
+    .class {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /* .outer {
+                box-shadow: 2px 2px 2px 2px #BBB1B2, 0px 2px black;
+                height: 100px;
+                width: 98%;
+                background-color: rgb(175, 178, 178);
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-wrap: wrap;
+                position: absolute;
+                top: 570px;
+                left: 5px;
+            } */
+
+
+    /* for longer Screen Size */
+    /* navebar mediaquery */
+    @media only screen and (max-width:992px) {
+
+        .iconss img {
+            max-height: 45px;
+        }
+
+        .outer {
+            box-shadow: 1px 1px 1px 1px #c9c9c9, 0px 1px #c9c9c9;
+            height: 200Px;
+            width: 100%;
+            margin: auto;
+            padding: 10px;
+            /* padding: 20px; */
+            background-color: rgb(255, 255, 255);
+            /* display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap; */
+            position: relative;
+            bottom: -50px;
+            border-radius: 20px;
+            /* left: 10%; */
+        }
+
+
+        .firstsection1 img {
+
+            max-height: 250px;
+        }
+
+        .navsearch {
+            display: block;
+        }
+
+        .input {
+            display: none;
+        }
+
+
+
+
+
+
+
+
+
+        .iconTwo {
+            display: none;
+        }
+
+        .icon {
+            display: block !important;
+        }
+
+
+        .navbar form {
+            display: block !important;
+        }
+
+        .navbar-expand-lg .navbar-nav .nav-link {
+            padding-left: 0px !important;
+        }
+
+        /* .outer {
+                box-shadow: 2px 2px 2px 2px #BBB1B2, 0px 2px black;
+                height: 100px;
+                width: 78%;
+                background-color: rgb(175, 178, 178);
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-wrap: wrap;
+                position: absolute;
+                top: 360px;
+                left: 130px;
+            }
+ */
+
+        .shape {
+            width: 100%;
+            padding-left: 0px;
+        }
+
+
+
+
+
+
+
+    }
+
+
+
+
+    /* For Medium Screen Size */
+    @media only screen and (max-width:768px) {
+
+        .newarrival1 {
+            padding-top: 50px;
+        }
+
+        .firstsection1 img {
+            padding: 15px;
+            max-height: 280px;
+        }
+
+
+
+        .aboutimage img {
+            max-height: 250px;
+        }
+
+        /* .outer {
+                box-shadow: 2px 2px 2px 2px #BBB1B2, 0px 2px black;
+                height: 100px;
+                width: 98%;
+                background-color: rgb(175, 178, 178);
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-wrap: wrap;
+                position: absolute;
+                top: 570px;
+                left: 5px;
+            } */
+
+        .shape {
+            width: 85%;
+            padding-left: 35px;
+        }
+
+
+
+
+        .outer {
+            box-shadow: 1px 1px 1px 1px #c9c9c9, 0px 1px #c9c9c9;
+            height: fit-content;
+            width: 100%;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            /* flex-wrap: wrap; */
+            position: relative;
+            bottom: 0%;
+
+        }
+
+        .outer .child {
+            width: 25%;
+
+        }
+
+        .newarival {
+            margin-top: 0px;
+        }
+
+
+
+    }
+
+
+
+
+    /* For Small Screen size */
+    @media only screen and (max-width:576px) {
+        .icon img {
+            height: 20px !important;
+            padding: 0px 5px !important;
+
+        }
+
+
+
+        .outer .child {
+            width: 100%;
+            height: 100px;
+            background-color: #404243;
+            margin: 10px;
+
+        }
+
+        .welcomeh {
+            text-align: center;
+        }
+
+
+        h5 {
+            text-align: center;
+            font-size: 18px !important;
+        }
+
+        h6 {
+            font-size: 14px !important;
+            text-align: center;
+        }
+    }
+
+    @media only screen and (min-width:992px) {
+        .icon {
+            display: none;
+        }
+    }
+</style>
+
+</head>
+
+
+<body style="background-color: #f0f8f4;">
+
+    <!-- navebar section  -->
+    <div class="container">
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                <img src="#" alt="LOGO" style="color: white;">
+                <span class="icon">
+
+
+                    <span class=" d-flex justify-content-center align-items-center">
+                        <input class="form-control me-2 padding 0 20px 0 30px input" type="search" placeholder="Search"
+                            aria-label="Search" style="border-radius: 20px;"> <a href="#"><img
+                                src="./Svg/notification-bell-svgrepo-com.svg" style="height: 30px;" class="px-3"
+                                alt="hhi"></a>
+                        <a href="#"><img src="./Svg/cart-arrow-down-svgrepo-com.svg" style="height: 30px;" class="px-3"
+                                alt="hhi"></a>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <!-- <span class="navbar-toggler-icon"></span> -->
+                            <div class="Menuparent">
+                                <div class="chil m-1 "></div>
+                                <div class="chil m-1 chil2 "></div>
+                                <div class="chil m-1 chil3"></div>
+                            </div>
+
+
+
+                        </button>
+                    </span>
+                </span>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-evenly align-items-center">
+                            <li class="nav-item m-2">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+
+                            <li class="nav-item m-2">
+                                <a class="nav-link active" aria-current="page" href="#">About</a>
+                            </li>
+
+                            <li class="nav-item m-2">
+                                <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+                            </li>
+                            <li class="nav-item m-2">
+                                <a class="nav-link active" aria-current="page" href="#">Login</a>
+                            </li>
+                            <li class="iconTwo">
+                                <span class="icon d-flex justify-content-center align-items-center">
+                                    <input class="form-control me-2 padding 0 20px 0 30px" type="search"
+                                        placeholder="Search" aria-label="Search" style="border-radius: 20px;"> <a
+                                        href="#"><img src="./Svg/notification-bell-svgrepo-com.svg"
+                                            style="height: 30px;" class="px-3" alt="hhi"></a>
+                                    <a href="#"><img src="./Svg/cart-arrow-down-svgrepo-com.svg" style="height: 30px;"
+                                            class="px-3" alt="hhi"></a>
+
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+
+
+
+                                    </button>
+                                </span>
+                            </li>
+
+
+
+
+                        </ul>
+                        <div class="navsearch">
+                            <div class="row d-flex   justify-content-center align-items-c">
+                                <div class="col-sm-6 d-flex justify-content-center align-items-center">
+
+
+                                    <input class="form-control me-2" type="search" placeholder="Search"
+                                        aria-label="Search" style="border-radius: 20px; width: 200px;">
+
+
+                                </div>
+                                <div class="col-sm-1 d-flex justify-content-center align-items-center"> <input
+                                        type="button" value="Search " class="searchBtn">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <!-- Body section  -->
+    <section>
+        <div class="container">
+            <div class="firstsection">
+                <div class="top ">
+                    <div class="row " style="display: flex; justify-content: center; align-items: center;">
+
+
+
+
+
+                        <div
+                            class="col-lg-6  order-lg-2 d-flex justify-content-center align-items-center firstsection1  pt-2 ">
+
+                            <img src="./Image/Layer 0.png" alt="" class="img-fluid introImg">
+                        </div>
+
+
+
+
+                        <div class="col-lg-6  order-lg-1">
+
+                            <h5>Welcome [app Name]</h5>
+
+                            <div class="welcomeh">
+                                <h1>A book is a <span> dream </span> you hold in <span>your hands </span>! </h1>
+                            </div>
+                            <h6><b>"Explore endless possibilities with our book app"</b></h6>
+                            <h6><b>Unlock a world </b> of books at your <b>fingertips</b>. <b>Rent, swap, buy,</b> and
+                                explore countless
+                                <b>e-books </b>. Join engaging reading groups and <b>Q&A sessions </b>. Create and
+                                publish your own
+                                stories now!
+                            </h6>
+
+
+                            <!-- <input class="form-control me-2 padding 0 20px 0 30px" type="search" placeholder="Search"
+                                aria-label="Search" style="border-radius: 20px; background-color: coral;"> -->
+                        </div>
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+                    <div class="outer">
+                        <div class="row d-flex justify-content-evenly align-items-center iconss pt-2">
+                            <div class="col-md-3 d-flex justify-content-evenly align-items-center">
+
+                                <div class="imageicon"> <img src="./Image/Rent.png" alt="" class="img-fluid ">
+                                    <h6 class="text-center  pt-2"><b>RENT</b></h6>
+                                </div>
+
+
+                            </div>
+
+                            <div class="col-md-3 d-flex justify-content-evenly align-items-center">
+                                <div class="imageicon">
+                                    <img src="./Image/downlodeicon.png" alt="" class="img-fluid ">
+                                    <h6 class="text-center  pt-2"><b>BUY</b></h6>
+                                    <!-- <p class="text-center"><h5><b>BUY</b></h5></p> -->
+                                </div>
+
+
+                            </div>
+
+
+                            <div class="col-md-3 d-flex justify-content-evenly align-items-center">
+                                <div class="imageicon">
+                                    <img src="./Image/swap.png" alt="" class="img-fluid ">
+                                    <!-- <p class="text-center"><b>SWAP </b></p> -->
+                                    <h6 class="text-center pt-2 "><b>SWAP</b></h6>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-3 d-flex justify-content-evenly align-items-center">
+                                <div class="imageicon">
+
+                                    <img src="./Image/e-book.png" alt="" class="img-fluid ">
+                                    <h6 class="text-center  pt-2"><b>e-BOOK</b></h6>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="row d-flex justify-content-evenly align-items-center iconss pt-3">
+                            <div class="col-md-3 d-flex justify-content-evenly align-items-center">
+                                <div class="imageicon">
+                                    <img src="./Image/Question.png" alt="" class="img-fluid ">
+                                    <!-- <p class="text-center"><b>Ques/Ans</b> </p> -->
+                                    <h6 class="text-center pt-2 "><b>Q/A</b></h6>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-3 d-flex justify-content-evenly align-items-center">
+                                <div class="imageicon">
+
+                                    <img src="./Image/challengeicon.png" alt="" class="img-fluid ">
+                                    <h6 class="text-center pt-2"><b>CHALLENGES</b></h6>
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-md-3 d-flex justify-content-evenly align-items-center">
+                                <div class="imageicon">
+                                    <img src="./Image/group.png" alt="" class="img-fluid ">
+                                    <h6 class="text-center pt-2 "><b>GROUPS</b></h6>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-3 d-flex justify-content-evenly align-items-center">
+                                <div class="imageicon">
+
+                                    <img src="./Image/write.png" alt="" class="img-fluid ">
+                                    <h6 class="text-center pt-2 "><b>WRITE</b></h6>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+
+
+                        <!-- <div class="child"></div>
+                        <div class="child">jkknjn</div>
+                        <div class="child">kmlkn</div>
+                        <div class="child">lknkl</div>
+                        <div class="child">lknlkj</div>
+                        <div class="child">njnj</div>
+                        <div class="child"> jjkn</div>
+                        <div class="child">klkjlnl</div>
+                        <div class="child">klkjlnl</div> -->
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- new arival section -->
+    <section>
+        <div class="container">
+            <div>
+                <div class="newarrival1 ">
+                    <h1>New Arival...!</h1>
+                </div>
+                <div class="newarrival ">
+                    <h6 style="text-align: center;">Discover the latest additions to our bookstore! From gripping
+                        thrillers to heartwarming romances
+                        and insightful non-fiction, our new arrivals section has something for every reader.</h6>
+                </div>
+                <div>
+                    <div class="row  newarival g-4 ">
+                        <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center align-items-center">
+
+                            <div class=" newarival1  d-flex justify-content-center flex-wrap">
+                                <img src="./Image/Book1.jfif" alt="b1" class="img-fluid ">
+                                <div class="bookContText">
+                                    <p class="text-center mb-0 bookNameCont ">RESONANT DUST</p>
+                                    <p class="text-center mb-0">Stan c.Smith</p>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center align-items-center">
+                            <div class=" newarival1 d-flex justify-content-center flex-wrap">
+                                <img src="./Image/Book2.jfif" alt="b1" class="img-fluid imghover">
+                                <div class="bookContText">
+                                    <p class="text-center mb-0 "><b>SELSTIA PRIME</b></p>
+                                    <p class="text-center mb-0">Adrian Tanase</p>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center align-items-center">
+                            <div class="  newarival1 d-flex justify-content-center flex-wrap">
+                                <img src="./Image/Book11.jfif" alt="b1" class="img-fluid imghover">
+                                <div class="bookContText">
+                                    <p class="text-center mb-0 "><b>ARCANUM SANCTUM</b></p>
+                                    <p class="text-center mb-0">B.T Sinciair</p>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center align-items-center">
+                            <div class="  newarival1 d-flex justify-content-center flex-wrap">
+                                <img src="./Image/Book4.jfif" alt="b1" class="img-fluid imghover">
+                                <div class="bookContText">
+                                    <p class="text-center mb-0 "><b>the NIGHT WOODS</b></p>
+                                    <p class="text-center mb-0">Liza Clarke</p>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+
+
+
+
+                        <!-- <div>
+                                <img src="./Image/Book3.jfif" alt="b2" class="img-fluid">
+                                <h5 class="text-center mb-0 "><b>The FOREST of FORGOTIEN TIME</b></h5>
+                                <p class="text-center mb-0">Michele e.Northwood</p>
+                            </div> -->
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+    </section>
+
+
+
+    <!-- adverdisement section  -->
+    <section>
+
+        <div class="container ">
+
+            <div class="bookBannerSec">
+
+                <div class="row pt-5">
+
+                    <div class="col-md-6 bookadv">
+                        <img src="./Image/bookadd.png" alt="" class="img-fluid">
+
+                    </div>
+                    <div class="col-md-6  mt-md-0 mt-4 font">
+                        <h1>Stephen King...!</h1>
+                        <h6>Books have been a fundamental part of human culture and knowledge transmission for
+                            centuries.
+                            They come in various forms, genres, and formats,.......</h6>
+                        <br>
+                        <button class="advbutton2">Read More</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!-- trending book section  -->
+    <section>
+        <div class="container">
+
+            <div class="trendingbooks pt-5">
+                <h1>Trending Books...!</h1>
+
+            </div>
+            <div class="d-flex justify-content-end">
+                <a href="#">
+                    <h6> Explore More...</h6>
+                </a>
+            </div>
+
+            <div class="row g-4  trendbook">
+                <div class="col-lg-3 col-md-4 col-6   d-flex justify-content-center align-items-center">
+
+                    <div class="newarival1 d-flex justify-content-center  flex-wrap">
+                        <div>
+                            <img src="./Image/Book5.jfif" alt="" class="img-fluid">
+                        </div>
+                        <div class="bookContText">
+                            <p class="text-center mb-0 "><b>LONG TIME GONE</b></p>
+                            <p class="text-center mb-0">Finley k.james</p>
+                        </div>
+                    </div>
+
+
+                    <!-- 
+                    <div class="  newarival1 d-flex justify-content-center flex-wrap">
+                                <img src="./Image/Book4.jfif" alt="b1" class="img-fluid imghover">
+                                <div class="bookContText">
+                                    <p class="text-center mb-0 "><b>the NIGHT WOODS</b></p>
+                                    <p class="text-center mb-0">Liza Clarke</p>
+                                </div> -->
+
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 d-flex justify-content-center align-items-center">
+
+
+                    <div class="newarival1 d-flex justify-content-center  flex-wrap">
+                        <div>
+                            <img src="./Image/Book6.jfif" alt="" class="img-fluid">
+                        </div>
+                        <div class="bookContText">
+                            <p class="text-center mb-0 "><b>PROBABLE CLAUS</b></p>
+                            <p class="text-center mb-0">James Palmer</p>
+                        </div>
+                    </div>
+
+                    <!-- <img src="./Image/Book4.jfif" alt="" class="img-fluid"> -->
+
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 d-flex justify-content-center align-items-center ">
+
+                    <div class="newarival1 d-flex justify-content-center  flex-wrap">
+                        <div>
+                            <img src="./Image/Book7.jfif" alt="" class="img-fluid">
+                        </div>
+                        <div class="bookContText">
+                            <p class="text-center mb-0 "><b>WISH CIMETERIUM</b></p>
+                            <p class="text-center mb-0">Richelle Manteufel</p>
+                        </div>
+                    </div>
+
+                    <!-- <img src="./Image/Book4.jfif" alt="" class="img-fluid"> -->
+
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 d-flex justify-content-center align-items-center">
+
+                    <div class="newarival1 d-flex justify-content-center  flex-wrap">
+                        <div>
+                            <img src="./Image/Book8.jfif" alt="" class="img-fluid">
+                        </div>
+                        <div class="bookContText">
+                            <p class="text-center mb-0 "><b>CROWN BURNING</b></p>
+                            <p class="text-center mb-0">Hareriynn</p>
+                        </div>
+                    </div>
+
+                    <!-- <img src="./Image/Book4.jfif" alt="" class="img-fluid"> -->
+
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 d-flex justify-content-center align-items-center">
+
+                    <div class="newarival1 d-flex justify-content-center  flex-wrap">
+                        <div>
+                            <img src="./Image/Book9.jfif" alt="" class="img-fluid">
+                        </div>
+                        <div class="bookContText">
+                            <p class="text-center mb-0 "><b>LEGACY of SERPENTS</b></p>
+                            <p class="text-center mb-0">Sydeny Winward</p>
+                        </div>
+                    </div>
+
+                    <!-- <img src="./Image/Book4.jfif" alt="" class="img-fluid"> -->
+
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 d-flex justify-content-center align-items-center">
+
+                    <!-- <img src="./Image/Book4.jfif" alt="" class="img-fluid"> -->
+
+                    <div class="newarival1 d-flex justify-content-center  flex-wrap">
+                        <div>
+                            <img src="./Image/Book10.jfif" alt="" class="img-fluid">
+                        </div>
+                        <div class="bookContText">
+                            <p class="text-center mb-0 "><b>THE IDEAL "I DO"</b></p>
+                            <p class="text-center mb-0">Dr.Dave Currie</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 d-flex justify-content-center align-items-center">
+
+                    <!-- <img src="./Image/Book4.jfif" alt="" class="img-fluid"> -->
+
+                    <div class="newarival1 d-flex justify-content-center  flex-wrap">
+                        <div>
+                            <img src="./Image/Book13.jfif" alt="" class="img-fluid">
+                        </div>
+                        <div class="bookContText">
+                            <p class="text-center mb-0 "><b>The amazing JACK MORLAND</b></p>
+                            <p class="text-center mb-0">Zita Aicha</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 d-flex justify-content-center align-items-center">
+
+                    <!-- <img src="./Image/Book4.jfif" alt="" class="img-fluid"> -->
+
+                    <div class="newarival1 d-flex justify-content-center  flex-wrap">
+                        <div>
+                            <img src="./Image/Book14.jfif" alt="" class="img-fluid">
+                        </div>
+                        <div class="bookContText">
+                            <p class="text-center mb-0 "><b>TRILLIONAIRE</b></p>
+                            <p class="text-center mb-0">TY Writes</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <!-- <div class="col-md-3"
+                    style="display: flex; justify-content: center; height: 250px; width: 170px; background-color: black; margin: 30px;">
+                    <img src="./Image/Book5.jfif" alt="">
+
+                </div>
+                <div class="col-md-3"
+                    style="display: flex; justify-content: center; height: 250px; width: 170px; background-color: black; margin: 30px;">
+                    <img src="./Image/Book6.jfif" alt="">
+                </div>
+                <div class="col-md-3"
+                    style="display: flex; justify-content: center; height: 250px; width: 170px; background-color: black; margin: 30px;">
+                    <img src="./Image/Book7.jfif" alt="">
+                </div> -->
+            </div>
+
+
+            <!-- <div>
+                <div class="row trends">
+                    <div class="col-md-3"
+                        style="display: flex; justify-content: center; height: 250px; width: 170px; background-color: black; margin: 30px;">
+                        <img src="./Image/Book8.jfif" alt="">
+
+                    </div>
+                    <div class="col-md-3"
+                        style="display: flex; justify-content: center; height: 250px; width: 170px; background-color: black; margin: 30px;">
+                        <img src="./Image/Book9.jfif" alt="">
+
+                    </div>
+                    <div class="col-md-3"
+                        style="display: flex; justify-content: center; height: 250px; width: 170px; background-color: black; margin: 30px;">
+                        <img src="./Image/Book10.jfif" alt="">
+                    </div>
+                    <div class="col-md-3"
+                        style="display: flex; justify-content: center; height: 250px; width: 170px; background-color: black; margin: 30px;">
+                        <img src="./Image/Book11.jfif" alt="">
+                    </div>
+                </div> -->
+
+            <!-- <div class="trendingbutton">
+                <button type="button" class="advbutton"> Explore More</button>
+            </div> -->
+
+        </div>
+
+
+    </section>
+
+
+    <!-- choose your author section  -->
+    <section>
+        <div class="container pt-5">
+            <div class="chooseauthor">
+                <div>
+                    <h1>Choose Your Author...!</h1>
+                </div>
+
+            </div>
+            <div class="d-flex justify-content-end"><a href="#">See all..</a></div>
+            <div class="row pt-3">
+                <div class="col-md-6  text">
+                    <h3>Best Author's</h3>
+                    <h3><b>William Shakespeare</b></h3>
+                    <h6>Often regarded as the greatest writer in the English language, Shakespeare's plays and sonnets
+                        have had a profound influence on literature, theater, and the arts. His works explore themes of
+                        love, power, jealousy, betrayal, and the human condition.William Shakespeare was a renowned
+                        English poet, playwright, and actor born in 1564 in Stratford-upon-Avon. His birthday is most
+                        commonly celebrated on 23 April (see When was Shakespeare born), which is also believed to be
+                        the date he died in 1616.</h6>
+                    <button type="button" class="advbutton2">Know More</button>
+
+
+                </div>
+
+                <div class="col-md-6 pt-3 ">
+                    <div class="class">
+                        <div class="p-2">
+
+                            <img src="./Image/author5.png" class="img-fluid">
+                        </div>
+                        <div class="p-2">
+
+                            <img src="./Image/author6.png" class="img-fluid">
+                        </div>
+                        <div class="p-2">
+
+                            <img src="./Image/author7.png" class="img-fluid">
+                        </div>
+                        <div class="p-2">
+
+                            <img src="./Image/author8.png" class="img-fluid">
+                        </div>
+                        <!-- <div class="authorboxout2">
+                            
+                        </div>
+                        <div class="authorboxout3">
+                            
+                        </div>
+                        <div class="authorboxout4">
+                           
+                        </div> -->
+                        <!-- <div>your content</div>
+                        <div>your content</div> -->
+                        <!-- <div>your content</div> -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- nearby library -->
+    <!-- <section>
+        <div class="container pt-5">
+            <div class="chooseauthor">
+                <div>
+                    <h1>Nearby Libraries...</h1>
+                </div>
+            </div>
+                <div class="d-flex justify-content-end"><a href="#">See all..</a></div>
+         
+            <div>
+                <div class="class">
+                    <div>your content</div>
+                    <div>your content</div>
+                    <div>your content</div>
+                    <div>your content</div>
+                    <div>your content</div>
+                    <div>your content</div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+    <!-- about us Section  -->
+
+    <section>
+        <div class="container p-5 my-5" style="background-color: #c0c0c0; border-radius: 20px; ">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md-4  d-flex justify-content-center align-items-center aboutimage ">
+                    <img src="./Image/about3.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-8 ">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <h1>About us</h1>
+                    </div>
+                    <h6 style="text-align: center;">Welcome to [Your App Name], where the love for reading meets
+                        convenience and affordability! Our
+                        mission is to make books accessible to everyone by offering a vast collection of titles for
+                        rent. From timeless classics to the latest bestsellers, our library has something for every
+                        reader. With our user-friendly app, you can explore new genres, discover hidden gems, and enjoy
+                        your favorite books without the commitment of purchasing. We believe that great stories should
+                        be shared and enjoyed by all. Join our community of book lovers and start your reading adventure
+                        today. Happy reading with [Your App Name]!.Stay connected and never miss out on the latest
+                        releases, special promotions,
+                        and community events. By joining us, you'll be the first to know about
+                        our new arrivals, exclusive discounts, and exciting reading challenges.</h6>
+                    <div class="abouticon pt-5">
+                        <a href=""><img src="./Svg/mail.svg" alt="mail" style="height: 30px;" class="abouticon"></a>
+                        <a href=""><img src="./Svg/twitter.svg" alt="mail" style="height: 30px;"></a>
+                        <a href=""><img src="./Svg/facebook.svg" alt="mail" style="height: 30px;"></a>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <!-- reviewSection -->
+    <section>
+
+        <div class="container py-3">
+            <div class="d-flex justify-content-center align-items-center my-3 ">
+                <h1>What People say About us...!</h1>
+            </div>
+            <!-- <div class="d-flex justify-content-end"><a href="#">See all..</a></div> -->
+
+
+
+
+
+
+            <div id="app">
+                <!-- Carousel slider -->
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <!-- elements with  "swiper-carousel-animate-opacity" class will have animated opacity -->
+                            <div class="swiper-carousel-animate-opacity">
+                                <img src="./Image/people1.png" alt="">
+                                <!-- <div class="slide-content">
+                                <h2>Guardians Of The Galaxy</h2>
+                                <p>A group of intergalactic criminals must pull together to stop a fanatical warrior
+                                    with plans to purge
+                                    the universe.</p>
+                            </div> -->
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-carousel-animate-opacity">
+                                <img src="./image/people2.png" alt="">
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-carousel-animate-opacity">
+                                <img src="./image/people3.png" alt="">
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-carousel-animate-opacity">
+                                <img src="./image/people4.png" alt="">
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-carousel-animate-opacity">
+                                <img src="./image/people5.png" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+    </section>
+
+
+    <!-- FormSection -->
+    <section>
+        <div class="container p-2  mt-3" style="background-color: #c0c0c0; border-radius: 20px 20px 0px 0px ">
+            <div style="  display: flex; justify-content: center; margin-bottom: 30px;">
+                <H1>Contact Us...!</H1>
+            </div>
+            <div class="row">
+                <div class="col-md-6 d-flex justify-content-center align-items-center formimg">
+                    <img src="./Image/form1.png" class="img-fluid" alt="">
+
+                </div>
+                <div class="col-md-6">
+                    <div>
+
+                        <br>
+                        <!-- <p>kjshybyxjhbjhsxbxsbns</p> -->
+                        <div class="innerdiv">
+                            <div class="row  g-3 mb-3 pt-md-5">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Enter Your Name">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Mobile number">
+                                </div>
+                            </div>
+                            <div class="row  g-3 mb-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Enter Email Address">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Subject">
+                                </div>
+                            </div>
+
+                            <div class="row">
+
+
+                                <div class="col-12">
+
+
+                                    <div class="form-group">
+                                        <!-- <label for="exampleFormControlTextarea1">Message</label> -->
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                            style="background-color: #e7e4e4;"
+                                            placeholder="Enter Your Message...."></textarea>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 mb-5 mt-4">
+                                    <button class="advbutton1" type="button" class="btn p-2 ">Send Message</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row footer" style="height: fit-content; background-color: var(--headerBg-color); color: white;">
+                <div class="col-sm-3 my-3 ">
+
+
+
+                    <div class="col-12 d-flex justify-content-center">
+
+                        <ul class=" p-0">
+                            <li>
+                                <h5>Company</h5>
+                            </li>
+
+                            <li>
+                                <hr style="width: 70px;" class=" m-0">
+                            </li>
+                            <br>
+                            <li><a href="">home</a></li>
+                            <li><a href="">about us </a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Login</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-sm-3   my-3 ">
+
+
+
+                    <div class="col-12 d-flex justify-content-center">
+
+                        <ul class=" p-0">
+                            <li>
+                                <h5>Get Help</h5>
+                            </li>
+
+                            <li>
+                                <hr style="width: 70px;" class=" m-0">
+                            </li>
+                            <br>
+                            <li><a href="">FQA</a></li>
+                            <li><a href="">Order</a></li>
+                            <li><a href="">Payment</a></li>
+                            <li><a href="">Setting</a></li>
+                            <li><a href="">Language</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-3   my-3 ">
+                    <div class="col-12 d-flex justify-content-center">
+
+                        <ul class=" p-0">
+                            <li>
+                                <h5>Features</h5>
+                            </li>
+
+                            <li>
+                                <hr style="width: 70px;" class=" m-0">
+                            </li>
+                            <br>
+                            <li><a href="">Rent</a></li>
+                            <li><a href="">Buy</a></li>
+                            <li><a href="">Swap</a></li>
+                            <li><a href="">e-Book</a></li>
+                            <li><a href="">Challenges</a></li>
+                            <li><a href="">Qus / Ans</a></li>
+                            <li><a href="">Write a Book</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-sm-3   my-3 ">
+                    <div class="col-12 d-flex justify-content-center">
+
+                        <ul class=" p-0">
+                            <li>
+                                <h5>Follow us</h5>
+                            </li>
+
+                            <li>
+                                <hr style="width: 70px;" class=" m-0">
+                            </li>
+                            <br>
+                            <li>
+                                <p><i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                    <i class="fa-solid fa-envelope"></i>
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <!-- <div class="col-md-3 my-3">
+                    <h4>Features</h4>
+                    <hr style="width: 70px;">
+                    <p>
+                        Rent <br>
+                        Buy <br>
+                        Swap <br>
+                        e-Book <br>
+                        Challenges <br>
+                        Que/Ans <br>
+                        write Book
+
+                    </p>
+                </div> -->
+            <!-- <div class="col-md-3 my-3">
+                    <h4>Get Help</h4>
+                    <hr style="width: 70px; margin-top: 5px; margin-bottom: 5px;">
+                    <p>
+                        FQA <br>
+                        Order <br>
+                        Payment <br>
+                        settings <br>
+                        Language <br>
+                        Profile <br>
+
+
+                    </p>
+                </div> -->
+
+            <!-- <div class="col-md-3 my-3">
+                <h4>Follow Us</h4>
+                <hr style="width: 70px;">
+                <p><i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-solid fa-envelope"></i>
+                </p>
+
+            </div> -->
+        </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"
+        integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+
+            $('.class').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+            });
+            $('.classs').slick({
+                centerMode: true,
+                centerPadding: '60px',
+                slidesToShow: 3,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .top {
+            background-color: aqua;
+            height: 200px;
+            width: 100%;
+            position: relative;
+
+        }
+
+        .outer {
+            background-color: rgb(167, 164, 164);
+            width: 80%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position:absolute;
+            top: 300px;
+            left: 50px;
+        }
+        .child{
+            margin: 20px;
+            width: 200px;
+            height: 50px;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <div class="outer">
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
